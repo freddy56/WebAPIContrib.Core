@@ -47,7 +47,7 @@ namespace WebApiContrib.Core.Formatter.Csv
             foreach (Type interfaceType in type.GetInterfaces())
             {
 
-                if (interfaceType == typeof(IList))
+                if (interfaceType == typeof(IEnumerable))
                     return true;
             }
 
